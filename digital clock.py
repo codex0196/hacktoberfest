@@ -10,6 +10,7 @@ def get_time():
     timeVar=time.strftime("%I:%M:%S %p")
     clock.config(text=timeVar)
     clock.after(200,get_time)
+    print("")
 
 clock=Label(master,font=("Arial",90),bg="black",fg="pink")
 clock.pack()
